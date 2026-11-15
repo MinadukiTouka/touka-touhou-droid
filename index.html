@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>水無月桐花的东方安卓移植站 | Minaduki Touka's Touhou Android Ports</title>
     <style>
-        /* 幽幽子主题配色：蓝、粉、白 */
+        /* uuz主题配色：蓝、紫、粉、白 */
         :root {
             --primary-color: #00b2ff; /* 蓝色 */
-            --primary-hover: #6a1b9a;
+            --primary-hover: #6a1b9a; /* 深紫色 */
             --accent-color: #ffb6c1; /* 樱花粉 */
             --bg-color: #f7f3f9;
             --text-main: #333;
@@ -32,13 +32,15 @@
         }
 
         header {
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            /* 改成了 蓝 -> 紫 -> 粉 的三色渐变，不发灰了 */
+            background: linear-gradient(135deg, #00b2ff 0%, #9b59b6 50%, #ffb6c1 100%);
             color: white;
             text-align: center;
             padding: 3rem 1rem;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
-            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.2);
+            /* 阴影也微调成了紫红色 */
+            box-shadow: 0 4px 15px rgba(155, 89, 182, 0.3);
         }
 
         header h1 {
@@ -100,7 +102,7 @@
 
         .game-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.15);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.15); /* 卡片悬浮时的紫色阴影 */
         }
 
         .game-card h3 {
@@ -143,12 +145,15 @@
             border-radius: 6px;
             font-weight: bold;
             font-size: 0.95rem;
-            transition: background-color 0.3s;
+            /* 为背景切换加上平滑动画 */
+            transition: background 0.3s, transform 0.2s; 
             margin-top: 1rem;
         }
 
         .btn-download:hover {
-            background-color: var(--primary-hover);
+            /* 鼠标悬停时，按钮背景变成“蓝到紫”的渐变 */
+            background: linear-gradient(90deg, var(--primary-color), var(--primary-hover));
+            transform: scale(1.02); /* 微微放大一点点，手感更好 */
         }
 
         .support-section {
