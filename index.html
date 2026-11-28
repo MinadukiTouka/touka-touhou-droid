@@ -370,6 +370,12 @@
             color: var(--on-primary);
         }
 
+        /* 按钮文案由脚本按语言填写；无脚本时只显示一个箭头 */
+        .btn-download:empty::before {
+            content: "↓";
+            font-weight: bold;
+        }
+
         .btn-download + .btn-download {
             margin-top: 0.4rem;
         }
@@ -805,8 +811,8 @@
                                 </div>
                                 <span class="version-tips" data-i18n="th01.v130">修复：点开应用后直接进入游戏、不显示标题界面；部分情况下上下键渲染异常；菜单界面渲染异常。</span>
                                 <span class="version-tips warning-text" data-i18n="th01.v130.warn">* 注意：高端机型打开设置会闪退（低端机型反而不会）；CONTINUE 后有概率导致关卡错乱。</span>
-                                <a href="https://pan.quark.cn/s/8dee9c9f03f4" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="v1.3.0">前往夸克网盘下载 v1.3.0</a>
-                                <a href="https://github.com/MinadukiTouka/th01/releases/download/v1.3.0/th01-1.3.0-android-apk.apk" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.github" data-v="v1.3.0">GitHub 下载 v1.3.0</a>
+                                <a href="https://pan.quark.cn/s/8dee9c9f03f4" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="th01"></a>
+                                <a href="https://github.com/MinadukiTouka/th01/releases/download/v1.3.0/th01-1.3.0-android-apk.apk" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.github" data-v="th01"></a>
                             </div>
 
                             <!-- 分割线 -->
@@ -818,7 +824,7 @@
                                     <span class="version-number">v1.0.1 <span class="version-tag" data-i18n="tag.stable">正式版</span></span>
                                 </div>
                                 <span class="version-tips" data-i18n="th01.v101">已经是正式的完整版了～SE和BGM都能正常播放。</span>
-                                <a href="https://pan.quark.cn/s/55759eb0753a" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="v1.0.1">前往夸克网盘下载 v1.0.1</a>
+                                <a href="https://pan.quark.cn/s/55759eb0753a" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="th01prev"></a>
                             </div>
 
                             <!-- 分割线 -->
@@ -830,7 +836,7 @@
                                     <span class="version-number">v0.2.2 <span class="version-tag" data-i18n="tag.beta">测试版</span></span>
                                 </div>
                                 <span class="version-tips warning-text" data-i18n="th01.v022.warn">* 注意：音乐存在 Bug，目前只会播放类似雪花屏的噪音。</span>
-                                <a href="https://pan.quark.cn/s/5ac22636e639" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="v0.2.2">前往夸克网盘下载 v0.2.2</a>
+                                <a href="https://pan.quark.cn/s/5ac22636e639" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="th01old"></a>
                             </div>
                         </div>
                     </div>
@@ -852,8 +858,8 @@
                                     <span class="version-number">v1.0 <span class="version-tag latest" data-i18n="tag.latest">最新正式版</span></span>
                                 </div>
                                 <span class="version-tips warning-text" data-i18n="th07.v100.warn">* 注意：当前版本 Replay 无法记录，已设置为游戏结束后自动退出。</span>
-                                <a href="https://pan.quark.cn/s/6c5984e3c4a0" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="v1.0">前往夸克网盘下载 v1.0</a>
-                                <a href="https://github.com/MinadukiTouka/th07/releases/download/v1.0.0-android/th07-debug.apk" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.github" data-v="v1.0">GitHub 下载 v1.0</a>
+                                <a href="https://pan.quark.cn/s/6c5984e3c4a0" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="th07"></a>
+                                <a href="https://github.com/MinadukiTouka/th07/releases/download/v1.0.0-android/th07-debug.apk" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.github" data-v="th07"></a>
                             </div>
                         </div>
                     </div>
@@ -875,8 +881,8 @@
                                     <span class="version-number">v1.0.1 <span class="version-tag latest" data-i18n="tag.latest">最新正式版</span></span>
                                 </div>
                                 <span class="version-tips" data-i18n="th08.v101">安卓移植正式版，运行稳定👍。</span>
-                                <a href="https://pan.quark.cn/s/046b38a2c4a9" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="v1.0.1">前往夸克网盘下载 v1.0.1</a>
-                                <a href="https://github.com/MinadukiTouka/th08/releases/download/v1.0.1/th08-1.0.1-full-android-apk.apk" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.github" data-v="v1.0.1">GitHub 下载 v1.0.1</a>
+                                <a href="https://pan.quark.cn/s/046b38a2c4a9" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="th01prev"></a>
+                                <a href="https://github.com/MinadukiTouka/th08/releases/download/v1.0.1/th08-1.0.1-full-android-apk.apk" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.github" data-v="th01prev"></a>
                             </div>
 
                             <!-- 分割线 -->
@@ -888,7 +894,7 @@
                                     <span class="version-number">v1.0.0 <span class="version-tag" data-i18n="tag.stable">正式版</span></span>
                                 </div>
                                 <span class="version-tips" data-i18n="th08.v100">上一个正式版，保留备查。</span>
-                                <a href="https://github.com/MinadukiTouka/th08/releases/download/v1.0.0/th08-1.0.0-full-android-apk.apk" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.github" data-v="v1.0.0">GitHub 下载 v1.0.0</a>
+                                <a href="https://github.com/MinadukiTouka/th08/releases/download/v1.0.0/th08-1.0.0-full-android-apk.apk" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.github" data-v="th08prev"></a>
                             </div>
                         </div>
                     </div>
@@ -911,7 +917,8 @@
                                 </div>
                                 <span class="version-tips" data-i18n="th10.v106a">大部分内测人员反映这个版本没那么卡，但只是相对的。</span>
                                 <span class="version-tips warning-text" data-i18n="th10.v106a.warn">* 注意：依旧和之前一样存在严重卡顿。</span>
-                                <a href="https://pan.quark.cn/s/82093f9e2851" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="v1.0.6a">前往夸克网盘下载 v1.0.6a</a>
+                                <a href="https://pan.quark.cn/s/82093f9e2851" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="th10a"></a>
+                                <a href="https://github.com/MinadukiTouka/th10/releases/download/v1.0.6a/th10-1.0.6a-android-full-apk.apk" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.github" data-v="th10a"></a>
                             </div>
 
                             <!-- 分割线 -->
@@ -924,7 +931,8 @@
                                 </div>
                                 <span class="version-tips" data-i18n="th10.v106b">理论上应该比 v1.0.6a 更流畅。</span>
                                 <span class="version-tips warning-text" data-i18n="th10.v106b.warn">* 注意：实际并非如此，依旧存在严重卡顿。</span>
-                                <a href="https://pan.quark.cn/s/07e99d89e1ac" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="v1.0.6b">前往夸克网盘下载 v1.0.6b</a>
+                                <a href="https://pan.quark.cn/s/07e99d89e1ac" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="th10b"></a>
+                                <a href="https://github.com/MinadukiTouka/th10/releases/download/v1.0.6b/th10-1.0.6b-android-full-apk.apk" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.github" data-v="th10b"></a>
                             </div>
 
                             <!-- 分割线 -->
@@ -936,8 +944,8 @@
                                     <span class="version-number">v1.0.2 <span class="version-tag" data-i18n="tag.stable">正式版</span></span>
                                 </div>
                                 <span class="version-tips warning-text" data-i18n="th10.v102.warn">* 注意：当前版本存在 Bug，游戏内会出现严重卡顿，正在油库里地修复中...</span>
-                                <a href="https://pan.quark.cn/s/653c99f4e91e" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="v1.0.2">前往夸克网盘下载 v1.0.2</a>
-                                <a href="https://github.com/MinadukiTouka/th10/releases/download/v1.0.2/th10-1.0.2-android-apk-full.apk" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.github" data-v="v1.0.2">GitHub 下载 v1.0.2</a>
+                                <a href="https://pan.quark.cn/s/653c99f4e91e" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.quark" data-v="th10"></a>
+                                <a href="https://github.com/MinadukiTouka/th10/releases/download/v1.0.2/th10-1.0.2-android-apk-full.apk" class="btn-download" target="_blank" rel="noopener noreferrer" data-i18n="dl.github" data-v="th10"></a>
                             </div>
                         </div>
                     </div>
@@ -1003,18 +1011,27 @@
              data-i18n-html   → 替换整段 HTML（含 <strong> 之类）
              data-i18n-aria   → 替换 aria-label
              data-i18n-title  → 替换 title 悬浮提示
-             data-v="v1.0.1"  → 给文案里的 {v} 占位符填值
+             data-v="th01prev"  → 给文案里的 {v} 占位符填值
            加一门新语言：复制一份 zh 改内容，再在 detect() 里认领语言代码。
            ============================================================ */
+        /* 版本号集中一处维护：文案用 {th10a} 这类占位符引用，下载按钮用 data-v="th10a" */
+        var VER = {
+            th01: 'v1.3.0', th01prev: 'v1.0.1', th01old: 'v0.2.2',
+            th07: 'v1.0',
+            th08: 'v1.0.1', th08prev: 'v1.0.0',
+            th10a: 'v1.0.6a', th10b: 'v1.0.6b', th10: 'v1.0.2'
+        };
+
         var I18N = {
             zh: {
                 htmlLang: 'zh-CN',
                 ogLocale: 'zh_CN',
-                'meta.title': `水無月桐花的东方安卓移植站 | Minaduki Touka's Touhou Android Ports`,
+                site: `水無月桐花的东方安卓移植站`,
+                'meta.title': `{site} | Minaduki Touka's Touhou Android Ports`,
                 'meta.desc': `水無月桐花的东方Project安卓移植作品下载站：东方灵异传 TH01、妖妖梦 TH07、永夜抄 TH08、风神录 TH10，全部免费发布。`,
-                'og.title': `水無月桐花的东方安卓移植站`,
+                'og.title': `{site}`,
                 'og.desc': `东方Project同人安卓移植作品下载，完全免费发布。`,
-                'header.title': `🦋 水無月桐花的东方安卓移植站 🌸`,
+                'header.title': `🦋 {site} 🌸`,
                 'header.sub': `Minaduki Touka's Touhou Android Ports`,
                 'notice.body': `<strong>⚠️ 同人作品声明：</strong><br>本站分享的所有游戏均为基于《东方Project》的<strong>非官方二次创作同人作品</strong>。<br>所有移植游戏仅供交流学习，<strong>完全免费发布</strong>，严禁用于任何商业用途。请支持 ZUN 与上海爱丽丝幻乐团的官方正版游戏。`,
                 'section.download': `📦 移植作品下载`,
@@ -1025,51 +1042,47 @@
                 'tag.beta': `测试版`,
                 'dl.quark': `前往夸克网盘下载 {v}`,
                 'dl.github': `GitHub 下载 {v}`,
-
                 'th01.title': `东方灵异传 (TH01)`,
                 'th01.desc': `东方系列的开山之作，全网第一个移植旧作www`,
                 'th01.v130': `修复：点开应用后直接进入游戏而不显示标题界面；部分情况下上下键渲染异常；菜单界面渲染异常。`,
                 'th01.v130.warn': `* 注意：高端机型打开设置会闪退（低端机型反而不会）；CONTINUE 后有概率导致关卡错乱。`,
                 'th01.v101': `已经是正式的完整版了～SE和BGM都能正常播放。`,
                 'th01.v022.warn': `* 注意：音乐存在 Bug，目前只会播放类似雪花屏的噪音。`,
-
                 'th07.title': `东方妖妖梦 (TH07)`,
                 'th07.desc': `完美无缺的樱花，幽幽子sama登场的经典之作。`,
                 'th07.v100.warn': `* 注意：当前版本 Replay 无法记录，已设置为游戏结束后自动退出。`,
-
                 'th08.title': `东方永夜抄 (TH08)`,
                 'th08.desc': `皎洁的月光，永夜异变。`,
                 'th08.v101': `安卓移植正式版，运行稳定👍。`,
                 'th08.v100': `上一个正式版，保留备查。`,
-
                 'th10.title': `东方风神录 (TH10)`,
                 'th10.desc': `信仰的集合，守矢神社的崛起。`,
                 'th10.v106a': `大部分内测人员反映这个版本没那么卡，但只是相对的。`,
                 'th10.v106a.warn': `* 注意：依旧和之前一样存在严重卡顿。`,
-                'th10.v106b': `理论上应该比 v1.0.6a 更流畅。`,
+                'th10.v106b': `理论上应该比 {th10a} 更流畅。`,
                 'th10.v106b.warn': `* 注意：实际并非如此，依旧存在严重卡顿。`,
                 'th10.v102.warn': `* 注意：当前版本存在 Bug，游戏内会出现严重卡顿，正在油库里地修复中...`,
-
                 'test.label': `欢迎加入测试群`,
                 'support.title': `💜 支持我的移植工作`,
                 'support.body': `所有游戏均免费发布。如果你喜欢我的作品，<br>可以通过 <strong>Bilibili充电计划</strong> 让妖梦给我泡杯茶～或者单纯表达一下支持！`,
                 'support.btn': `前往 Bilibili 支持我`,
                 'footer.copy': `© {year} 水無月桐花 (Minaduki Touka). 幽幽子好きの東方移植置き場。`,
                 'footer.legal': `本站仅作为个人同人作品分享，东方Project版权归 ZUN / 上海爱丽丝幻乐团 所有。`,
-
                 'theme.toDark': `切换到深色模式`,
                 'theme.toLight': `切换到浅色模式`,
-                'lang.switch': `切换语言`
+                'lang.switch': `切换语言`,
+            
             },
 
             en: {
                 htmlLang: 'en',
                 ogLocale: 'en_US',
-                'meta.title': `Minaduki Touka's Touhou Android Ports | Free Downloads`,
+                site: `Minaduki Touka's Touhou Android Ports`,
+                'meta.title': `{site} | Free Downloads`,
                 'meta.desc': `Free Android ports of Touhou Project games by Minaduki Touka: Reiiden TH01, Perfect Cherry Blossom TH07, Imperishable Night TH08 and Mountain of Faith TH10.`,
-                'og.title': `Minaduki Touka's Touhou Android Ports`,
+                'og.title': `{site}`,
                 'og.desc': `Free fan-made Touhou Project Android ports.`,
-                'header.title': `🦋 Minaduki Touka's Touhou Android Ports 🌸`,
+                'header.title': `🦋 {site} 🌸`,
                 'header.sub': `水無月桐花 · Touhou Project, now on Android`,
                 'notice.body': `<strong>⚠️ Fan-work notice:</strong><br>Every game on this site is an <strong>unofficial derivative fan work</strong> based on the Touhou Project.<br>All ports are released <strong>completely free</strong> for learning and exchange only; commercial use is strictly forbidden. Please support ZUN and Team Shanghai Alice's official games.`,
                 'section.download': `📦 Download the ports`,
@@ -1080,51 +1093,47 @@
                 'tag.beta': `Beta`,
                 'dl.quark': `Download {v} from Quark`,
                 'dl.github': `Download {v} on GitHub`,
-
                 'th01.title': `Highly Responsive to Prayers (TH01)`,
                 'th01.desc': `The very first Touhou game — and the first PC-98 port of it on the web (lol).`,
                 'th01.v130': `Fixed: the app jumped straight into the game without showing the title screen; up/down keys rendered incorrectly in some cases; broken menu rendering.`,
                 'th01.v130.warn': `* Note: opening Settings crashes on high-end devices (low-end ones are fine); using CONTINUE can sometimes scramble the stage.`,
                 'th01.v101': `Now a full stable release — sound effects and BGM both play correctly.`,
                 'th01.v022.warn': `* Note: BGM is buggy — for now it only plays noise that sounds like TV static.`,
-
                 'th07.title': `Perfect Cherry Blossom (TH07)`,
                 'th07.desc': `Flawless cherry blossoms — the classic that puts Yuyuko-sama on stage.`,
                 'th07.v100.warn': `* Note: replays cannot be recorded in this build; the game quits automatically when a run ends.`,
-
                 'th08.title': `Imperishable Night (TH08)`,
                 'th08.desc': `Bright moonlight and the eternal night incident.`,
                 'th08.v101': `The stable Android port build — runs smoothly 👍.`,
                 'th08.v100': `Previous stable build, kept for reference.`,
-
                 'th10.title': `Mountain of Faith (TH10)`,
                 'th10.desc': `Gathering faith, and the rise of Moriya Shrine.`,
                 'th10.v106a': `Most beta testers found this build less laggy — but only relatively.`,
                 'th10.v106a.warn': `* Note: severe lag is still there, same as before.`,
-                'th10.v106b': `In theory this should run smoother than v1.0.6a.`,
+                'th10.v106b': `In theory this should run smoother than {th10a}.`,
                 'th10.v106b.warn': `* Note: in practice it isn't — the severe lag remains.`,
                 'th10.v102.warn': `* Note: this build has a bug that causes severe in-game lag — being fixed at a yukkuri pace...`,
-
                 'test.label': `Join the test group`,
                 'support.title': `💜 Support my porting work`,
                 'support.body': `Everything here is released for free. If you enjoy my work,<br>you can have Youmu brew me a cup of tea through <strong>Bilibili charging</strong> — or simply show your support!`,
                 'support.btn': `Support me on Bilibili`,
                 'footer.copy': `© {year} Minaduki Touka (水無月桐花). A Touhou port corner run by a Yuyuko fan.`,
                 'footer.legal': `This site only shares personal fan works. The Touhou Project is © ZUN / Team Shanghai Alice.`,
-
                 'theme.toDark': `Switch to dark mode`,
                 'theme.toLight': `Switch to light mode`,
-                'lang.switch': `Change language`
+                'lang.switch': `Change language`,
+            
             },
 
             ja: {
                 htmlLang: 'ja',
                 ogLocale: 'ja_JP',
-                'meta.title': `水無月桐花の東方アンドロイド移植所 | 無料配布`,
+                site: `水無月桐花の東方アンドロイド移植所`,
+                'meta.title': `{site} | 無料配布`,
                 'meta.desc': `水無月桐花による東方Projectの Android 移植作品：東方靈異伝 TH01、東方妖々夢 TH07、東方永夜抄 TH08、東方風神録 TH10。すべて無料配布。`,
-                'og.title': `水無月桐花の東方アンドロイド移植所`,
+                'og.title': `{site}`,
                 'og.desc': `東方Project 二次創作の Android 移植作品を無料配布しています。`,
-                'header.title': `🦋 水無月桐花の東方アンドロイド移植所 🌸`,
+                'header.title': `🦋 {site} 🌸`,
                 'header.sub': `水無月桐花 · 東方Project を Android で`,
                 'notice.body': `<strong>⚠️ 二次創作について：</strong><br>当サイトのゲームはすべて『東方Project』を原作とする<strong>非公式の二次創作</strong>です。<br>移植版はすべて<strong>完全無料</strong>で公開しており、交流・学習目的のみです。商業利用は固く禁じます。ZUN 様と上海アリス幻樂団の公式作品をご支援くださいますようお願いいたします。`,
                 'section.download': `📦 移植作品ダウンロード`,
@@ -1135,52 +1144,48 @@
                 'tag.beta': `テスト版`,
                 'dl.quark': `Quark から {v} をダウンロード`,
                 'dl.github': `GitHub で {v} をダウンロード`,
-
                 'th01.title': `東方靈異伝 (TH01)`,
                 'th01.desc': `東方シリーズの原点。ネット上で初の旧作移植です www。`,
                 'th01.v130': `修正：起動するとタイトル画面を経ずにゲームが始まる問題、一部環境で上下キーの描画がおかしくなる問題、メニュー画面の描画不具合。`,
                 'th01.v130.warn': `* 注意：ハイエンド端末では設定を開くと落ちます（ローエンドでは逆に落ちません）。CONTINUE 後にステージが崩れることがあります。`,
                 'th01.v101': `もう正式な完全版です～SE も BGM も正常に再生されます。`,
                 'th01.v022.warn': `* 注意：BGM にバグがあり、今は砂嵐のようなノイズしか鳴りません。`,
-
                 'th07.title': `東方妖々夢 (TH07)`,
                 'th07.desc': `完璧な桜、幽々子様が登場する名作。`,
                 'th07.v100.warn': `* 注意：このバージョンではリプレイが保存できません。ステージ終了後は自動で終了する設定です。`,
-
                 'th08.title': `東方永夜抄 (TH08)`,
                 'th08.desc': `清らかな月光、永夜異変。`,
                 'th08.v101': `Android 移植の正式版。安定して動作します👍。`,
                 'th08.v100': `前回の正式版。記録用に残しています。`,
-
                 'th10.title': `東方風神録 (TH10)`,
                 'th10.desc': `信仰の集結、守矢神社の台頭。`,
                 'th10.v106a': `多くのテスターから「前より重くない」との報告がありました。ただし相対的な話です。`,
                 'th10.v106a.warn': `* 注意：以前と変わらず深刻な処理落ちがあります。`,
-                'th10.v106b': `理論上は v1.0.6a より滑らかなはず。`,
+                'th10.v106b': `理論上は {th10a} より滑らかなはず。`,
                 'th10.v106b.warn': `* 注意：実際はそうではなく、深刻な処理落ちが残っています。`,
                 'th10.v102.warn': `* 注意：現バージョンにはバグがあり、ゲーム内で深刻な処理落ちが発生します。ゆっくり修理中…`,
-
                 'test.label': `テストグループに参加`,
                 'support.title': `💜 移植活動を支援する`,
                 'support.body': `すべて無料で公開しています。気に入っていただけたら、<br><strong>Bilibili の充電（応援）</strong>で妖夢にお茶を入れてもらう～なんて形で応援していただけると嬉しいです！`,
                 'support.btn': `Bilibili で応援する`,
                 'footer.copy': `© {year} 水無月桐花 (Minaduki Touka). 幽々子好きの東方移植置き場。`,
                 'footer.legal': `当サイトは個人の二次創作を共有する場です。東方Project の著作権は ZUN / 上海アリス幻樂団に帰属します。`,
-
                 'theme.toDark': `ダークモードに切り替え`,
                 'theme.toLight': `ライトモードに切り替え`,
-                'lang.switch': `言語を切り替え`
+                'lang.switch': `言語を切り替え`,
+            
             },
 
             /* 繁體中文（臺灣用語） */
             'zh-Hant': {
                 htmlLang: 'zh-Hant',
                 ogLocale: 'zh_TW',
-                'meta.title': `水無月桐花的東方安卓移植站 | Minaduki Touka's Touhou Android Ports`,
+                site: `水無月桐花的東方安卓移植站`,
+                'meta.title': `{site} | Minaduki Touka's Touhou Android Ports`,
                 'meta.desc': `水無月桐花的東方Project安卓移植作品下載站：東方靈異傳 TH01、妖妖夢 TH07、永夜抄 TH08、風神錄 TH10，全部免費發佈。`,
-                'og.title': `水無月桐花的東方安卓移植站`,
+                'og.title': `{site}`,
                 'og.desc': `東方Project同人安卓移植作品下載，完全免費發佈。`,
-                'header.title': `🦋 水無月桐花的東方安卓移植站 🌸`,
+                'header.title': `🦋 {site} 🌸`,
                 'header.sub': `Minaduki Touka's Touhou Android Ports`,
                 'notice.body': `<strong>⚠️ 同人作品聲明：</strong><br>本站分享的所有遊戲均為基於《東方Project》的<strong>非官方二次創作同人作品</strong>。<br>所有移植遊戲僅供交流學習，<strong>完全免費發佈</strong>，嚴禁任何商業用途。請支持 ZUN 與上海愛麗絲幻樂團的官方正版遊戲。`,
                 'section.download': `📦 移植作品下載`,
@@ -1191,41 +1196,36 @@
                 'tag.beta': `測試版`,
                 'dl.quark': `前往夸克網盤下載 {v}`,
                 'dl.github': `GitHub 下載 {v}`,
-
                 'th01.title': `東方靈異傳 (TH01)`,
                 'th01.desc': `東方系列的開山之作，全網第一個移植舊作www`,
                 'th01.v130': `修復：點開 App 後直接進入遊戲而不顯示標題介面；部分情況下上下鍵渲染異常；選單介面渲染異常。`,
                 'th01.v130.warn': `* 注意：高階機型開啟設定會閃退（低階機型反而不會）；CONTINUE 後有機率導致關卡錯亂。`,
                 'th01.v101': `已經是正式的完整版了～SE 和 BGM 都能正常播放。`,
                 'th01.v022.warn': `* 注意：音樂存在 Bug，目前只會播放類似雪花屏的噪音。`,
-
                 'th07.title': `東方妖妖夢 (TH07)`,
                 'th07.desc': `完美無缺的櫻花，幽幽子sama登場的經典之作。`,
                 'th07.v100.warn': `* 注意：目前版本 Replay 無法記錄，已設定為遊戲結束後自動退出。`,
-
                 'th08.title': `東方永夜抄 (TH08)`,
                 'th08.desc': `皎潔的月光，永夜異變。`,
                 'th08.v101': `安卓移植正式版，執行穩定👍。`,
                 'th08.v100': `上一個正式版，保留備查。`,
-
                 'th10.title': `東方風神錄 (TH10)`,
                 'th10.desc': `信仰的集合，守矢神社的崛起。`,
                 'th10.v106a': `大部分內測人員反映這個版本比較不卡，但只是相對的。`,
                 'th10.v106a.warn': `* 注意：依舊和之前一樣存在嚴重卡頓。`,
-                'th10.v106b': `理論上應該比 v1.0.6a 更流暢。`,
+                'th10.v106b': `理論上應該比 {th10a} 更流暢。`,
                 'th10.v106b.warn': `* 注意：實際並非如此，依舊存在嚴重卡頓。`,
                 'th10.v102.warn': `* 注意：目前版本存在 Bug，遊戲內會出現嚴重卡頓，正在油庫裡地修復中...`,
-
                 'test.label': `歡迎加入測試群`,
                 'support.title': `💜 支持我的移植工作`,
                 'support.body': `所有遊戲均免費發佈。如果你喜歡我的作品，<br>可以透過 <strong>Bilibili 充電計畫</strong> 讓妖夢給我泡杯茶～或者單純表達一下支持！`,
                 'support.btn': `前往 Bilibili 支持我`,
                 'footer.copy': `© {year} 水無月桐花 (Minaduki Touka). 幽幽子好きの東方移植置き場。`,
                 'footer.legal': `本站僅作為個人同人作品分享，東方Project 版權歸 ZUN / 上海愛麗絲幻樂團 所有。`,
-
                 'theme.toDark': `切換到深色模式`,
                 'theme.toLight': `切換到淺色模式`,
-                'lang.switch': `切換語言`
+                'lang.switch': `切換語言`,
+            
             },
 
             /* Русский */
@@ -1247,41 +1247,36 @@
                 'tag.beta': `Бета`,
                 'dl.quark': `Скачать {v} с Quark`,
                 'dl.github': `Скачать {v} на GitHub`,
-
                 'th01.title': `Highly Responsive to Prayers (TH01)`,
                 'th01.desc': `Самая первая игра Touhou — и первый в сети порт версии PC-98 (лол).`,
                 'th01.v130': `Исправлено: приложение сразу запускало игру без титульного экрана; в некоторых случаях неправильно отрисовывались клавиши вверх/вниз; ломалась отрисовка меню.`,
                 'th01.v130.warn': `* Внимание: на мощных устройствах настройки вылетают (на слабых — наоборот); после CONTINUE уровень иногда перемешивается.`,
                 'th01.v101': `Теперь это полноценная стабильная версия — звук и BGM работают нормально.`,
                 'th01.v022.warn': `* Внимание: BGM глючит — пока играет только шум, похожий на помехи.`,
-
                 'th07.title': `Perfect Cherry Blossom (TH07)`,
                 'th07.desc': `Безупречная сакура — классика, в которой появляется Ююко-сама.`,
                 'th07.v100.warn': `* Внимание: в этой версии реплеи не записываются; игра настроена на автовыход после завершения партии.`,
-
                 'th08.title': `Imperishable Night (TH08)`,
                 'th08.desc': `Яркая луна и инцидент бесконечной ночи.`,
                 'th08.v101': `Стабильная сборка Android-порта — всё работает гладко 👍.`,
                 'th08.v100': `Предыдущая стабильная версия, оставлена для истории.`,
-
                 'th10.title': `Mountain of Faith (TH10)`,
                 'th10.desc': `Сбор веры и возвышение святилища Мория.`,
                 'th10.v106a': `Большинство тестеров заметили, что эта версия тормозит меньше — но лишь относительно.`,
                 'th10.v106a.warn': `* Внимание: сильные тормоза никуда не делись, как и раньше.`,
-                'th10.v106b': `Теоретически должна работать плавнее v1.0.6a.`,
+                'th10.v106b': `Теоретически должна работать плавнее {th10a}.`,
                 'th10.v106b.warn': `* Внимание: на практике нет — сильные тормоза остались.`,
                 'th10.v102.warn': `* Внимание: в сборке есть баг, вызывающий сильные тормоза в игре — чинится в темпе юккури...`,
-
                 'test.label': `Присоединяйтесь к тестовой группе`,
                 'support.title': `💜 Поддержать мою работу над портами`,
                 'support.body': `Всё выкладывается бесплатно. Если вам нравятся мои работы,<br>можно через <strong>Bilibili Charging</strong> попросить Юму заварить мне чашку чая — или просто поддержать меня!`,
                 'support.btn': `Поддержать на Bilibili`,
                 'footer.copy': `© {year} Минадзуки Тоука (水無月桐花). Уголок портов Touhou от фаната Ююко.`,
                 'footer.legal': `Этот сайт — просто личная витрина фан-работ. Права на Touhou Project принадлежат ZUN / Team Shanghai Alice.`,
-
                 'theme.toDark': `Переключить на тёмную тему`,
                 'theme.toLight': `Переключить на светлую тему`,
-                'lang.switch': `Сменить язык`
+                'lang.switch': `Сменить язык`,
+            
             },
 
             /* Español */
@@ -1303,52 +1298,48 @@
                 'tag.beta': `Beta`,
                 'dl.quark': `Descargar {v} desde Quark`,
                 'dl.github': `Descargar {v} en GitHub`,
-
                 'th01.title': `Highly Responsive to Prayers (TH01)`,
                 'th01.desc': `El primer juego de Touhou — y el primer port de la versión PC-98 en la red (lol).`,
                 'th01.v130': `Corregido: la app entraba directo al juego sin mostrar la pantalla de título; en algunos casos las teclas arriba/abajo se dibujaban mal; fallos de dibujado en el menú.`,
                 'th01.v130.warn': `* Ojo: abrir los ajustes cierra la app en móviles potentes (en los de gama baja no); usar CONTINUE a veces desordena el nivel.`,
                 'th01.v101': `Ya es la versión completa estable: los efectos de sonido y la BGM suenan bien.`,
                 'th01.v022.warn': `* Ojo: la música tiene un bug — por ahora solo suena un ruido tipo estática.`,
-
                 'th07.title': `Perfect Cherry Blossom (TH07)`,
                 'th07.desc': `Cerezos perfectos: el clásico en el que aparece Yuyuko-sama.`,
                 'th07.v100.warn': `* Ojo: en esta versión no se guardan repeticiones; el juego está configurado para cerrarse al terminar una partida.`,
-
                 'th08.title': `Imperishable Night (TH08)`,
                 'th08.desc': `Luz de luna y el incidente de la noche eterna.`,
                 'th08.v101': `Compilación estable del port de Android: funciona sin problemas 👍.`,
                 'th08.v100': `Versión estable anterior, conservada como referencia.`,
-
                 'th10.title': `Mountain of Faith (TH10)`,
                 'th10.desc': `Reunión de fe y el ascenso del santuario Moriya.`,
                 'th10.v106a': `Casi todos los probadores notaron menos tirones en esta versión, pero solo en comparación con las anteriores.`,
                 'th10.v106a.warn': `* Ojo: los tirones fuertes siguen ahí, igual que antes.`,
-                'th10.v106b': `En teoría debería ir más fluida que la v1.0.6a.`,
+                'th10.v106b': `En teoría debería ir más fluida que la {th10a}.`,
                 'th10.v106b.warn': `* Ojo: en la práctica no es así; los tirones fuertes continúan.`,
                 'th10.v102.warn': `* Ojo: esta versión tiene un bug que provoca tirones fuertes en el juego — se está arreglando a ritmo yukkuri...`,
-
                 'test.label': `Únete al grupo de pruebas`,
                 'support.title': `💜 Apoya mi trabajo de ports`,
                 'support.body': `Todo se publica gratis. Si te gusta lo que hago,<br>puedes pedirle a Youmu que me prepare un té con <strong>Bilibili Charging</strong> — o simplemente mostrar tu apoyo.`,
                 'support.btn': `Apóyame en Bilibili`,
                 'footer.copy': `© {year} Minaduki Touka (水無月桐花). Un rincón de ports de Touhou hecho por un fan de Yuyuko.`,
                 'footer.legal': `Este sitio solo comparte obras fan personales. Touhou Project es © ZUN / Team Shanghai Alice.`,
-
                 'theme.toDark': `Cambiar a modo oscuro`,
                 'theme.toLight': `Cambiar a modo claro`,
-                'lang.switch': `Cambiar idioma`
+                'lang.switch': `Cambiar idioma`,
+            
             },
 
             /* 彩蛋一：漢文訓讀體（漢文に訓點を添へたる體） */
             lzh: {
-                htmlLang: `zh`,
-                ogLocale: `zh_CN`,
-                'meta.title': `水無月桐花ノ東方安卓移植站 | Minaduki Touka ノ Touhou Android Ports`,
+                htmlLang: 'zh',
+                ogLocale: 'zh_CN',
+                site: `水無月桐花ノ東方安卓移植站`,
+                'meta.title': `{site} | Minaduki Touka ノ Touhou Android Ports`,
                 'meta.desc': `水無月桐花ガ東方Project ノ安卓移植作品ヲ載スル站：東方靈異傳 TH01、東方妖々夢 TH07、東方永夜抄 TH08、東方風神錄 TH10。皆無料ニ𬼀發布ス。`,
-                'og.title': `水無月桐花ノ東方安卓移植站`,
+                'og.title': `{site}`,
                 'og.desc': `東方Project 同人安卓移植作品ノ下載所ナリ。皆無料。`,
-                'header.title': `🦋 水無月桐花ノ東方安卓移植站 🌸`,
+                'header.title': `🦋 {site} 🌸`,
                 'header.sub': `Minaduki Touka ノ Touhou Android Ports`,
                 'notice.body': `<strong>⚠️ 同人作品ノ御斷リ：</strong><br>當站ニ載スル遊戲ハ皆『東方Project』ニ基ク<strong>非公式ノ二次創作</strong>ナリ。<br>移植遊戲ハ唯交流學習ノ為ニ𬼀、<strong>皆無料ニ發布ス</strong>。商業ノ用ニ供スルヿヲ嚴禁ス。請フ ZUN ト上海愛麗絲幻樂團ノ公式正本ヲ支援セヨ。`,
                 'section.download': `📦 移植作品ヲ下載ス`,
@@ -1376,7 +1367,7 @@
                 'th10.desc': `信仰ノ集結、守矢神社ノ崛起。`,
                 'th10.v106a': `試用ノ人多クハ「此版本左程重カラズ」ト告グ。然レドモ唯相對ノ事ナリ。`,
                 'th10.v106a.warn': `* 戒：猶重キ遲滯アリ。`,
-                'th10.v106b': `理論上ハ v1.0.6a ゟ流暢ナルベシ。`,
+                'th10.v106b': `理論上ハ {th10a} ゟ流暢ナルベシ。`,
                 'th10.v106b.warn': `* 戒：實際ハ然ラズ、重キ遲滯猶在リ。`,
                 'th10.v102.warn': `* 戒：現版本ニ失アリ、戲中ニ重キ遲滯ヲ生ズ。今修復中ナリ...`,
                 'test.label': `試群ニ入ルヲ歡迎ス`,
@@ -1388,17 +1379,19 @@
                 'theme.toDark': `暗色ニ易フ`,
                 'theme.toLight': `明色ニ易フ`,
                 'lang.switch': `言語ヲ易フ`,
+            
             },
 
             /* 彩蛋二：上古漢文（古字） */
             och: {
-                htmlLang: `zh`,
-                ogLocale: `zh_CN`,
-                'meta.title': `水無月桐花㞢東方安卓移植站 | Minaduki Touka 㞢 Touhou Android Ports`,
+                htmlLang: 'zh',
+                ogLocale: 'zh_CN',
+                site: `水無月桐花㞢東方安卓移植站`,
+                'meta.title': `{site} | Minaduki Touka 㞢 Touhou Android Ports`,
                 'meta.desc': `水無月桐花所移東方Project安卓諸作，皆在是站：東方靈異傳 TH01、東方妖々夢 TH07、東方永夜抄 TH08、東方風神錄 TH10。𠀠直皆亡。`,
-                'og.title': `水無月桐花㞢東方安卓移植站`,
+                'og.title': `{site}`,
                 'og.desc': `東方Project同人安卓移植諸作，丅載㞢所也，𠀠直皆亡。`,
-                'header.title': `🦋 水無月桐花㞢東方安卓移植站 🌸`,
+                'header.title': `🦋 {site} 🌸`,
                 'header.sub': `Minaduki Touka 㞢 Touhou Android Ports`,
                 'notice.body': `<strong>⚠️ 同人㞢戒：</strong><br>是站所出㞢戲，皆本『東方Project』而爲，非官所作也。<br>諸移植隹供斈習交流，不取𠀠直而布焉，毋得㠯㞢求利。願共助 ZUN 与上海愛麗絲幻樂團㞢正本。`,
                 'section.download': `📦 丅載移植㞢作`,
@@ -1426,7 +1419,7 @@
                 'th10.desc': `信仰㞢集，守矢神社㞢所起也。`,
                 'th10.v106a': `試者多言此本稍暢，然隹相對耳。`,
                 'th10.v106a.warn': `* 戒：重頓猶在。`,
-                'th10.v106b': `理當比 v1.0.6a 更暢。`,
+                'th10.v106b': `理當比 {th10a} 更暢。`,
                 'th10.v106b.warn': `* 戒：實不然，重頓猶在。`,
                 'th10.v102.warn': `* 戒：此本又疵，戲中生重頓，方修㞢...`,
                 'test.label': `歡迎入試群`,
@@ -1438,6 +1431,7 @@
                 'theme.toDark': `易爲暗色`,
                 'theme.toLight': `易爲朙色`,
                 'lang.switch': `易𠀠語`,
+            
             }
         };
 
@@ -1464,11 +1458,12 @@
                 var s = pack()[key];
                 if (s == null) s = I18N.zh[key];
                 if (s == null) return key;
-                if (vars) {
-                    s = s.replace(/\{(\w+)\}/g, function (m, k) {
-                        return vars[k] != null ? vars[k] : m;
-                    });
-                }
+                s = s.replace(/\{(\w+)\}/g, function (m, k) {
+                    if (vars && vars[k] != null) return vars[k];   /* {year} {v} */
+                    if (VER[k] != null) return VER[k];             /* {th10a} 等版本占位符 */
+                    var own = pack()[k];                           /* {site} */
+                    return own != null ? own : m;
+                });
                 return s;
             }
             window.T = t; /* 主题脚本等地方也用同一套词 */
@@ -1527,7 +1522,7 @@
                 each('[data-i18n]', function (el) {
                     el.textContent = t(el.getAttribute('data-i18n'), {
                         year: year,
-                        v: el.getAttribute('data-v')
+                        v: VER[el.getAttribute('data-v')] || el.getAttribute('data-v')
                     });
                 });
                 each('[data-i18n-html]', function (el) {
